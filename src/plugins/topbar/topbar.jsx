@@ -150,7 +150,7 @@ export default class Topbar extends React.Component {
         <div className="wrapper">
           <div className="topbar-wrapper">
             <Link>
-              <img height="40" src={ Logo } alt="Swagger UI"/>
+              <img height="70" src={ Logo } alt="Swagger UI"/>
             </Link>
             <form className="download-url-wrapper" onSubmit={formOnSubmit}>
               {control.map((el, i) => cloneElement(el, { key: i }))}
