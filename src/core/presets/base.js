@@ -62,6 +62,7 @@ import Info, {
   InfoBasePath
 } from "core/components/info"
 import InfoContainer from "core/containers/info"
+import AuthenticationTag from "core/containers/authentication-tag"
 import JumpToPath from "core/components/jump-to-path"
 import Footer from "core/components/footer"
 import FilterContainer from "core/containers/filter"
@@ -112,6 +113,7 @@ export default function() {
       InitializedInput,
       info: Info,
       InfoContainer,
+      AuthenticationTag,
       JumpToPath,
       onlineValidatorBadge: OnlineValidatorBadge,
       operations: Operations,
