@@ -62,6 +62,7 @@ import Info, {
   InfoBasePath
 } from "core/components/info"
 import InfoContainer from "core/containers/info"
+import AuthenticationTag from "core/components/authentication-tag"
 import JumpToPath from "core/components/jump-to-path"
 import CopyToClipboardBtn from "core/components/copy-to-clipboard-btn"
 import Footer from "core/components/footer"
@@ -113,6 +114,7 @@ export default function() {
       InitializedInput,
       info: Info,
       InfoContainer,
+      AuthenticationTag,
       JumpToPath,
       CopyToClipboardBtn,
       onlineValidatorBadge: OnlineValidatorBadge,

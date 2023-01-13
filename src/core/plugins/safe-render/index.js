@@ -10,6 +10,7 @@ const safeRenderPlugin = ({componentList = [], fullOverride = false} = {}) => ({
     "BaseLayout",
     "VersionPragmaFilter",
     "InfoContainer",
+    "AuthenticationTag",
     "ServersContainer",
     "SchemesContainer",
     "AuthorizeBtnContainer",

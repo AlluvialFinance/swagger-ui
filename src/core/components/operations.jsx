@@ -28,6 +28,11 @@ export default class Operations extends React.Component {
   render() {
     let {
       specSelectors,
+      getComponent,
+      oas3Selectors,
+      layoutSelectors,
+      layoutActions,
+      getConfigs,
     } = this.props
 
     const taggedOps = specSelectors.taggedOperations()
@@ -36,9 +41,19 @@ export default class Operations extends React.Component {
       return <h3> No operations defined in spec!</h3>
     }
 
+    const AuthenticationTag = getComponent("AuthenticationTag", true)
+
     return (
       <div>
         { taggedOps.map(this.renderOperationTag).toArray() }
+        <AuthenticationTag
+           oas3Selectors={oas3Selectors}
+           layoutSelectors={layoutSelectors}
+           layoutActions={layoutActions}
+           getConfigs={getConfigs}
+           getComponent={getComponent}
+           specUrl={specSelectors.url()}
+        />
         { taggedOps.size < 1 ? <h3> No operations defined in spec! </h3> : null }
       </div>
     )
@@ -54,6 +69,7 @@ export default class Operations extends React.Component {
       getConfigs,
     } = this.props
     const OperationContainer = getComponent("OperationContainer", true)
+    
     const OperationTag = getComponent("OperationTag")
     const operations = tagObj.get("operations")
     return (
