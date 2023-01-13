@@ -1,8 +1,8 @@
 import React from "react"
-import SwaggerUILogo from "./logo_small.svg"
+import AlluvialLogo from "./logo_small.svg"
 
 export const Logo = () => (
-  <img height="40" src={ SwaggerUILogo } alt="Swagger UI"/>
+  <img height="70" src={ AlluvialLogo } alt="Alluvial"/>
 )
 
 export default Logo
